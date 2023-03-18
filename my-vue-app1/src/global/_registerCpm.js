@@ -11,6 +11,11 @@ export default {
   registerAllCpm(Vue) {
     const cpms = import.meta.glob('../components/**/*.vue',{eager:true})
     
-    console.log({cpms});
+    Object.entries(cpms).map(([key,module]) => {
+      console.log({key,module});
+      if (module.default?.name) {
+        Vue.component(module.default?.name,module.default)
+      }
+    })
   }
 }

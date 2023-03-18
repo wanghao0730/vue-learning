@@ -3,6 +3,7 @@
 //我们下面使用了$attrs获取父组件传递给子组件的数据 避免了我们的数据父子传递的时候要进行申明更多的参数设置
 export default {
   inheritAttrs: false,
+  name: "DemoCpm",
 };
 </script>
 <script setup name="DemoCpm">

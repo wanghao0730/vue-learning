@@ -1,3 +1,8 @@
+<script>
+export default {
+  name: "PiniaCpm",
+};
+</script>
 <script setup>
 import { computed } from "vue";
 import { storeToRefs } from "pinia";
